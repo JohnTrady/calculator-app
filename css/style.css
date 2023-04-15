@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    font-family:  sans-serif;
+    color: #f1f1f1;
+    height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    background: #333;
+    transition: all 0.3s ease 0s;
+    touch-action: pan-y;
+    
+
+    
+    
+}
+
+html.light body {
+    color: #000;
+    background:  #F1F2F3;; 
+}
+
+button {
+    background-color:  transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  
+} 
+ul,
+ol, 
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 , h2 ,h3 ,h4 ,h5 ,h6 , p {
+   margin: 0;
+}
+
+.wrapper {
+   min-height: 100vh;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+._container {
+    max-width:768px;
+    padding: 0  0.9375rem;
+    margin: 0 auto;
+ 
+}
+
+
+.calculator {
+   
+}
+.calculator__container {
+    position: relative;
+    min-height: 90vh;
+    display:grid;
+    align-items:center;
+    overflow: auto;
+}
+._container {
+     
+    
+}
+.calculator__body {
+  
+    display: grid;
+    align-items: center;
+}
+.calculator__screen {
+    justify-self: end;
+    padding: 1rem;
+
+     
+}
+
+.calculator__screen  span {
+    font-size: 6rem;
+    line-height: 1;
+}
+@media (max-width: 767.98px) {
+    .calculator__screen  span {
+        font-size: calc(60px + 36 * ((100vw - 320px)/ 448));
+        line-height: 1;
+    }
+}
+.calculator__numpad {
+  
+   
+}
+.numpad {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, minmax(3.75rem, 1fr));
+    gap: 1rem;
+    
+}
+@media (max-width: 767.98px) {
+    .numpad {
+        gap: calc(8px + 8 * ((100vw - 320px)/ 448));
+    }
+
+}
+
+
+.numpad__button {
+    background-color: black;
+    border-radius: 1rem;
+    padding: 0.75rem 0;
+    font-size:2rem;
+    line-height: 125%;
+    display: flex;
+    color: inherit;
+    align-items: center;
+    justify-content: center;
+    transition:  background-color 0.3s ease 0s;
+}
+
+html.light .numpad__button {
+  background-color:rgba(0, 128, 0, 0.05);;
+}
+
+.numpad__button span {
+    
+}
+.numpad__button-grey {
+    background-color: #4E505F ;
+}
+
+html.light .numpad__button-grey {
+    background-color: #D2D3DA;
+  }
+.numpad__button-green {
+    background-color: #23B123 !important;
+}
+
+.numpad__button:active {
+     background-color:rgb(210, 211, 218, 0.3) ;
+}
+.numpad__button-green:active {
+    background-color: #05ff05!important;
+}
+
+html.light .numpad__button:active {
+    background-color: rgba(0, 0, 0, 0.1) ;
+}
+html.light .numpad__button-grey:active {
+    background-color: rgba(0, 128, 0, 0.05); ;
+}
+.numpad__button-operation {
+}
+.numpad__button-digit-zero {
+    grid-column: span 2;
+   
+}
+ 
+
+
+.color-theme {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+
+.color-theme__body {
+    min-width: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color:#2E2F38;
+    padding: 0.25rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    transition: background 0.3s ease 0s;
+    cursor: pointer;
+}
+html.light .color-theme__body  {
+    background-color:rgba(0, 128, 0, 0.05);
+}
+.color-theme__switch  {
+    position: absolute;
+    left: 3px;
+    background-color: #4E505F;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    transition:all 0.3s ease 0s;
+    transform: translate(0, 0);
+    
+}
+
+html.light .color-theme__switch  {
+  background-color:  #D2D3DA;
+  transform: translate(42px, 0);
+}
+.darkmode-icon {
+    width: 20px;
+    height: 20px;
+    background: url('../img/darkmode.svg') 0 0 / 100% no-repeat;
+}
+
+
+.lightmode-icon {
+    width: 20px;
+    height: 20px;
+    background: url('../img/lightmode.svg') 0 0 / 100% no-repeat;
+}
