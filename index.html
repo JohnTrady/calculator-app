@@ -19,28 +19,28 @@
                 </div>
              </div>
              <div class="calculator__body">
-                  <div class="calculator__screen"><span>0</span></div>
+                  <div data-screen class="calculator__screen"><span>0</span></div>
 
-                  <div class="calculator__numpad numpad">
-                      <button class="numpad__button  numpad__button-grey"><span>C</span></button>
-                      <button class="numpad__button  numpad__button-grey">±</button>
-                      <button class="numpad__button  numpad__button-grey" >%</button>
-                      <button class="numpad__button numpad__button-green numpad__button-divide">÷</button>
-                      <button class="numpad__button  numpad__button-digit">7</button>
-                      <button class="numpad__button  numpad__button-digit">8</button>
-                      <button class="numpad__button  numpad__button-digit">9</button>
-                      <button class="numpad__button numpad__button-green numpad__button-operation">x</button>
-                      <button class="numpad__button  numpad__button-digit">4</button>
-                      <button class="numpad__button  numpad__button-digit">5</button>
-                      <button class="numpad__button  numpad__button-digit">6</button>
-                      <button class="numpad__button numpad__button-green numpad__button-operation">-</button>
-                      <button class="numpad__button   numpad__button-digit">1</button>
-                      <button class="numpad__button   numpad__button-digit">2</button>
-                      <button class="numpad__button   numpad__button-digit">3</button>
-                      <button class="numpad__button  numpad__button-green numpad__button-operation">+</button>
-                      <button class="numpad__button  numpad__button-digit numpad__button-digit-zero ">0</button>
-                      <button class="numpad__button  numpad__button-operation">.</button>
-                      <button class="numpad__button numpad__button-green numpad__button-operation">=</button>
+                  <div data-numpad class="calculator__numpad numpad">
+                      <button  data-numpad-button="reset" class="numpad__button  numpad__button-grey"><span>C</span></button>
+                      <button  data-numpad-button="change"  class="numpad__button  numpad__button-grey">±</button>
+                      <button  data-numpad-button="percent" class="numpad__button  numpad__button-grey">%</button>
+                      <button  data-numpad-button  data-numpad-operation="/" class="numpad__button numpad__button-green numpad__button-operation">÷</button>
+                      <button  data-numpad-button data-numpad-digit="7" class="numpad__button  numpad__button-digit">7</button>
+                      <button  data-numpad-button data-numpad-digit="8" class="numpad__button  numpad__button-digit">8</button>
+                      <button  data-numpad-button data-numpad-digit="9" class="numpad__button  numpad__button-digit">9</button>
+                      <button  data-numpad-button  data-numpad-operation="*" class="numpad__button numpad__button-green numpad__button-operation">x</button>
+                      <button  data-numpad-button data-numpad-digit="4" class="numpad__button  numpad__button-digit">4</button>
+                      <button  data-numpad-button data-numpad-digit="5" class="numpad__button  numpad__button-digit">5</button>
+                      <button  data-numpad-button data-numpad-digit="6"  class="numpad__button  numpad__button-digit">6</button>
+                      <button  data-numpad-button  data-numpad-operation="-" class="numpad__button numpad__button-green numpad__button-operation">-</button>
+                      <button  data-numpad-button data-numpad-digit="1"  class="numpad__button   numpad__button-digit">1</button>
+                      <button  data-numpad-button data-numpad-digit="2"  class="numpad__button   numpad__button-digit">2</button>
+                      <button  data-numpad-button data-numpad-digit="3"  class="numpad__button   numpad__button-digit">3</button>
+                      <button  data-numpad-button  data-numpad-operation="+" class="numpad__button  numpad__button-green numpad__button-operation">+</button>
+                      <button  data-numpad-button data-numpad-digit="0" class="numpad__button   numpad__button-digit numpad__button-digit-zero ">0</button>
+                      <button  data-numpad-button="." data-numpad-digit="." class="numpad__button numpad__button-dot  ">.</button>
+                      <button  data-numpad-button="result" class="numpad__button numpad__button-green ">=</button>
                       
                   </div>
              </div>

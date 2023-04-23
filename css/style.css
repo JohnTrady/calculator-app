@@ -38,11 +38,8 @@ button {
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+    
+    
 }
 
 a {
@@ -142,7 +139,7 @@ h1 , h2 ,h3 ,h4 ,h5 ,h6 , p {
     color: inherit;
     align-items: center;
     justify-content: center;
-    transition:  background-color 0.3s ease 0s;
+    
 }
 
 html.light .numpad__button {
@@ -176,11 +173,22 @@ html.light .numpad__button:active {
 html.light .numpad__button-grey:active {
     background-color: rgba(0, 128, 0, 0.05); ;
 }
+
 .numpad__button-operation {
+    transition: background-color 0.3s ease 0s;
+}
+.numpad__button-operation:focus {
+    background-color: #05ff05!important;
 }
 .numpad__button-digit-zero {
     grid-column: span 2;
    
+}
+.numpad__button-dot {
+    transition: background-color 0.3s ease 0s;
+}
+.numpad__button-dot:focus {
+    background-color:rgb(210, 211, 218, 0.3) ;
 }
  
 
