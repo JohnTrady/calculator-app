@@ -48,7 +48,7 @@ export const actions = e => {
      };
 
      function changeSign () {
-        if(exp.b === '' && exp.operation === '') {
+        if(exp.b === '' ) {
             exp.a =  -1 * Number(exp.a); 
             screenOutput.textContent = Number(exp.a);
         } else {
@@ -57,7 +57,7 @@ export const actions = e => {
         }
      };
      function getPercent () {
-        if(exp.b === '' && exp.operation === '') {
+        if(exp.b === '' ) {
             exp.a =   Number(exp.a) / 100; 
             screenOutput.textContent = Number(exp.a);
         } else {
